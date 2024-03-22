@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2024 NortN. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <virtualType name="AppearanceSourceImage" type="Magento\PageBuilder\Model\Source\VisualSelect">
+        <arguments>
+            <argument name="optionsSize" xsi:type="string">large</argument>
+            <argument name="optionsData" xsi:type="array">
+                <item name="1" xsi:type="array">
+                    <item name="value" xsi:type="string">picture-image</item>
+                    <item name="title" xsi:type="string" translate="true">Picture</item>
+                    <item name="icon" xsi:type="string">NortN_PageBuilderAdvancedImage/images/content-type/image/appearance/picture-image.svg</item>
+                </item>
+            </argument>
+        </arguments>
+    </virtualType>
+</config>
