@@ -12,16 +12,23 @@
             <if args="data.mobile_image_source.attributes().srcset">
                 <source media="(max-width: 767px)" attr="data.mobile_image_source.attributes">
             </if>
-            <if args="data.desktop_image.attributes().src">
-                <img attr="data.desktop_image.attributes"
-                     css="data.desktop_image.css"
-                     ko-style="data.desktop_image.style" />
-            </if>
             <if args="data.mobile_image.attributes().src && !data.desktop_image.attributes().src">
                 <img attr="data.mobile_image.attributes"
                      class="pagebuilder-mobile-only"
                      css="data.mobile_image.css"
                      ko-style="data.mobile_image.style" />
+            </if>
+            <if args="data.mobile_image.attributes().src && data.desktop_image.attributes().src">
+                <if args="data.mobile_image.attributes().src === data.desktop_image.attributes().src">
+                    <img attr="data.desktop_image.attributes"
+                         css="data.desktop_image.css"
+                         ko-style="data.desktop_image.style" />
+                </if>
+                <if args="data.mobile_image.attributes().src !== data.desktop_image.attributes().src">
+                    <img attr="data.mobile_image.attributes"
+                         css="data.mobile_image.css"
+                         ko-style="data.mobile_image.style" />
+                </if>
             </if>
         </picture>
     </a>
@@ -34,16 +41,23 @@
             <if args="data.mobile_image_source.attributes().srcset">
                 <source media="(max-width: 767px)" attr="data.mobile_image_source.attributes">
             </if>
-            <if args="data.desktop_image.attributes().src">
-                <img attr="data.desktop_image.attributes"
-                     css="data.desktop_image.css"
-                     ko-style="data.desktop_image.style" />
-            </if>
             <if args="data.mobile_image.attributes().src && !data.desktop_image.attributes().src">
                 <img attr="data.mobile_image.attributes"
                      class="pagebuilder-mobile-only"
                      css="data.mobile_image.css"
                      ko-style="data.mobile_image.style" />
+            </if>
+            <if args="data.mobile_image.attributes().src && data.desktop_image.attributes().src">
+                <if args="data.mobile_image.attributes().src === data.desktop_image.attributes().src">
+                    <img attr="data.desktop_image.attributes"
+                         css="data.desktop_image.css"
+                         ko-style="data.desktop_image.style" />
+                </if>
+                <if args="data.mobile_image.attributes().src !== data.desktop_image.attributes().src">
+                    <img attr="data.mobile_image.attributes"
+                         css="data.mobile_image.css"
+                         ko-style="data.mobile_image.style" />
+                </if>
             </if>
         </picture>
     </ifnot>
