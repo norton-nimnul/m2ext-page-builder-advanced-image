@@ -2,12 +2,6 @@
 
 ---
 
-## Image Appearances
-
-Added Image appearance switcher with option to use &lt;picture&gt; instead of using default Magento approach with 2 images swithed by CSS class.
-
-![Image Appearances](src/readme/image-appearances.png)
-
 ## Image Optimisation
 
 ### Image Loading

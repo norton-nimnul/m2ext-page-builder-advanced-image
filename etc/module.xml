@@ -8,6 +8,7 @@
     <module name="NortN_PageBuilderAdvancedImage">
         <sequence>
             <module name="Magento_PageBuilder"/>
+            <module name="NortN_PageBuilderAdvancedImageAppearance"/>
         </sequence>
     </module>
 </config>

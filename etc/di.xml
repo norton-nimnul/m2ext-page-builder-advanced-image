@@ -7,15 +7,7 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <virtualType name="DefaultWYSIWYGValidator">
         <arguments>
-            <argument name="allowedTags" xsi:type="array">
-                <item name="picture" xsi:type="string">picture</item>
-                <item name="source" xsi:type="string">source</item>
-            </argument>
             <argument name="attributesAllowedByTags" xsi:type="array">
-                <item name="source" xsi:type="array">
-                    <item name="srcset" xsi:type="string">srcset</item>
-                    <item name="media" xsi:type="string">media</item>
-                </item>
                 <item name="img" xsi:type="array">
                     <item name="loading" xsi:type="string">loading</item>
                 </item>
